@@ -1,0 +1,300 @@
+hr {
+  margin-bottom: 18px ;
+  width: 60px;
+  height: 4px;
+  background-color: var(--seaweed);
+}
+.benefits {
+  height: 420px;
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 1257px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
+  position: relative;
+  z-index: 2;
+  transform: translate(0, -100px);
+  @include pageContainer;
+
+}
+.benefits-item {
+  margin-left: 80px;
+  margin-right: 80px;
+  &__title {
+    margin-top: 26px;
+    margin-bottom: 28px;
+  }
+  &__text {
+  }
+}
+.pricing {
+  @include pageContainer;
+  @include flexCenterColumn;
+}
+.pricing-header {
+    width: 810px;
+    height: 128px;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #32325c;
+    margin-top: 50px;
+}
+.pricing-text {
+  display: flex;
+  width: 470px;
+  height: 60px;
+  border-radius: 5px;
+  border: solid 1px #aefdd9;
+  margin-top: 40px;
+  &__button1{
+    width: 162px;
+    background-color: #ffffff;
+    border: solid 1px #aefdd9;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #1fdb84;
+  }
+  &__button2{
+    width: 308px;
+    border: solid 1px #aefdd9;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #1fdb84;
+    background-color: #f1fff8;
+  }
+}
+.testimonials  {
+  @include pageContainer;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.testimonials-container {
+  width: 378px;
+  height: 665px;
+  text-align: center;
+  &__header-text h2 {
+    margin-top: 53px;
+    font-size: 24px;
+    margin-bottom: 31px;
+  }
+  &__header-text span {
+    font-size: 72px;
+    color: #1fdb84;
+  }
+  &__header-text p {
+    margin-top: 13px;
+    font-size: 16px;
+    color: #5b6c94;
+  }
+  &__content-text {
+    margin-top: 60px;
+    font-size: 16px;
+    color: #5b6c94;
+  }
+  &__content-text div {
+    margin-top: 17px;
+  }
+  &__btn_start {
+    margin-top: 59px;
+    margin-bottom: 57px;
+    width: 255px;
+    height: 60px;
+    background-color: #1fdb84;
+    box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+    border: solid 1px #aefdd9;
+    border-top-left-radius: $btn-default-border-radius;
+    border-bottom-right-radius: $btn-default-border-radius;
+    color: #FFFFFF;
+  }
+}
+.testimonials-container:hover {
+  border-top: #0a8aff solid 2px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 24px 0 rgba(83, 83, 83, 0.1);
+
+}
+.clients {
+  @include pageContainer;
+  margin-top: 250px;
+}
+.clients-container {
+  display: flex;
+  flex-direction: row;
+  &__rectangle p {
+    position: absolute;
+    transform: translate(7px, 40px);
+    width: 310px;
+    height: 104px;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #031d5b;
+  }
+  &__rectangle {
+    padding-top: 30px;
+    padding-right: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    &__rectangle-1{
+      margin-left: 48px;
+      width: 165px;
+      height: 413px;
+      background-image: linear-gradient(to bottom, rgba(31, 219, 132, 0.1), rgba(31, 219, 132, 0.05));
+  }
+  &__background {
+    display: inline-flex;
+    width: 810px;
+    height: 970px;
+    background-color: #313a5a;
+  }
+  &__background-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 100px;
+    margin-bottom: 90px;
+  }
+  &__background-nav-oval {
+    width: 20px;
+    height: 20px;
+    border: solid 3px #ffffff;
+    border-radius: 50%;
+    margin: 8px;
+  }
+    &__background-nav-oval:active {
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff;
+      border: solid 3px #ffffff;
+    }
+  }
+.clients-feedback {
+  @include pageContainer;
+  position: absolute;
+  transform: translate(280px,-720px);
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-start;
+  &__reviews-column {
+    width: 420px;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-radius: 6px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 12px 12px 40px 0 rgba(121, 121, 121, 0.3);
+  }
+  &__reviews-column p {
+    padding-left: 50px;
+    padding-right: 60px;
+    text-align: left;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #5b6c94;
+    margin-bottom: 42px;
+
+  }
+  &__reviews-column-overlay {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+  &__reviews-column-rectangle {
+    margin-bottom: 23px;
+    margin-right: 13px;
+    width: 18px;
+    height: 40px;
+    background-color: #1fdb84;
+  }
+  }
+.footer a {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5b6c94;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    margin-top: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #031d5b;
+  }
+  &__icons {
+    @include pageContainer
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 47px;
+  }
+  &__credit {
+    margin-top: 180px;
+    width: 780px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5b6c94;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -75px;
+    margin-bottom: 114px;
+  }
+}

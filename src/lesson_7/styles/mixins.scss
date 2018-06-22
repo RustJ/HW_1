@@ -1,0 +1,18 @@
+@import "./variables.scss";
+
+@mixin pageContainer {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 $page-container-padding;
+}
+
+@mixin  flexCenterVertical {
+  display: flex;
+  align-items: center;
+}
+
+@mixin  flexCenterColumn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
