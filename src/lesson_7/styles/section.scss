@@ -20,14 +20,35 @@ hr {
   @include pageContainer;
 
 }
+.benefits-item p{
+  width: 300px;
+  height: 128px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #5b6c94;
+}
 .benefits-item {
-  margin-left: 80px;
-  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   &__title {
     margin-top: 26px;
     margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #031d5b;
   }
-  &__text {
+  &__img {
+    margin-top: 66px;
   }
 }
 .pricing {
@@ -270,7 +291,7 @@ hr {
     color: #031d5b;
   }
   &__icons {
-    @include pageContainer
+    @include pageContainer;
     width: 90%;
     display: flex;
     flex-direction: row;
