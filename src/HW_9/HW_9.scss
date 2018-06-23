@@ -1,0 +1,21 @@
+#back > div {
+  width:         70px;
+  height:        70px;
+  border-radius: 70px;
+  margin:        2px;
+}
+
+#back {
+  background-color: gray;
+  width:            74px;
+  padding:          2px;
+}
+
+#red.open      {background-color: red;}
+#red.closed    {background-color: #300000;}
+
+#yellow.open   {background-color: #FFFF00; border-color: #404000;}
+#yellow.closed {background-color: #303000;}
+
+#green.open    {background-color: green; border-color: #004000;}
+#green.closed  {background-color: #003000;}
