@@ -92,7 +92,6 @@ li {
   .baner__img {
     width: 463px;
     height: 792px;
-    background: url(../assets/images/artboard.png) no-repeat center;
     background-size: contain;
     margin-top: 57px; }
   .baner__info h1 {
@@ -169,12 +168,37 @@ hr {
   margin: 0 auto;
   padding: 0 16px; }
 
+.benefits-item p {
+  width: 300px;
+  height: 128px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #5b6c94; }
+
 .benefits-item {
-  margin-left: 80px;
-  margin-right: 80px; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .benefits-item__title {
     margin-top: 26px;
-    margin-bottom: 28px; }
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #031d5b; }
+  .benefits-item__img {
+    margin-top: 66px; }
 
 .pricing {
   max-width: 1250px;

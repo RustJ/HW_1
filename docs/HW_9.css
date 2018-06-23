@@ -1,0 +1,11 @@
+.traffic-light {
+  position: absolute;
+  background-color: silver;
+  border-radius: 10px; }
+
+#red, #yellow, #green {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 10px; }
