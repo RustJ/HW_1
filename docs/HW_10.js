@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 344);
+/******/ 	return __webpack_require__(__webpack_require__.s = 347);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9051,49 +9051,88 @@ module.exports = function (regExp, replace) {
 /* 341 */,
 /* 342 */,
 /* 343 */,
-/* 344 */
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(345);
+module.exports = __webpack_require__(348);
 
 
 /***/ }),
-/* 345 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(346);
+__webpack_require__(349);
 
-document.getElementById('red').onclick = flashRed;
-document.getElementById('yellow').onclick = flashYellow;
-document.getElementById('green').onclick = flashGreen;
+// Задание 2
+var user = {};
+user.name = "Вася";
+user.surname = "Петров";
+user.name = "Сергей";
+delete user.name;
+console.log();
 
-function flashRed() {
-    none();
-    document.getElementById('red').style.backgroundColor = "red";
+// Задание 3
+
+function isEmpty(obj) {
+
+    for (var key in obj) {
+        return false;
+    }
+    return true;
 }
 
-function flashYellow() {
-    none();
-    document.getElementById('yellow').style.backgroundColor = "yellow";
+var schedule = {};
+
+alert(isEmpty(schedule)); // true
+
+schedule["true"] = "true";
+
+alert(isEmpty(schedule)); // false
+
+// Задание 4
+
+var salaries = {
+    John: 400,
+    Jack: 200
+    // test: 'asdasdasd'
+};
+
+var sum = 0;
+for (var name in salaries) {
+    sum += salaries[name];
 }
 
-function flashGreen() {
-    none();
-    document.getElementById('green').style.backgroundColor = "green";
+alert(sum);
+
+// Задание 5
+
+var salaries1 = {
+    John: 400,
+    Jack: 200
+};
+
+var max = 0;
+var maxName = "";
+for (var _name in salaries1) {
+    if (max < salaries1[_name]) {
+        max = salaries1[_name];
+        maxName = _name;
+    }
 }
 
-function none() {
-    document.getElementById('red').style.backgroundColor = "black";
-    document.getElementById('yellow').style.backgroundColor = "black";
-    document.getElementById('green').style.backgroundColor = "black";
-}
+alert(maxName || "нет сотрудников");
+
+// Задание 6
 
 /***/ }),
-/* 346 */
+/* 349 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
